@@ -1,39 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenZ Finds Hub</title>
   <title>GenZFindsHub</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-black text-white font-sans">
 
+<!-- Navbar -->
+<nav class="flex justify-between items-center p-5 bg-black border-b border-red-600">
+  <h1 class="text-2xl font-bold text-red-500">GenZ Finds Hub</h1>
+  <div class="space-x-4">
+    <a href="#products" class="hover:text-red-500">Products</a>
+    <a href="#about" class="hover:text-red-500">About</a>
+    <a href="#contact" class="hover:text-red-500">Contact</a>
+  </div>
+</nav>
   <h1 class="text-center text-4xl text-red-500 p-5">
     🔥 GenZFindsHub
   </h1>
 
+<!-- Hero -->
+<section class="text-center py-20">
+  <h2 class="text-4xl font-bold mb-4">Find Your Style 🔥</h2>
+  <p class="text-gray-400 mb-6">Best Budget Fashion for GenZ</p>
+  <a href="#products" class="bg-red-500 px-6 py-3 rounded-2xl hover:bg-red-600">
+    Shop Now
+  </a>
+</section>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
 
+<!-- Products -->
+<section id="products" class="p-10 grid grid-cols-1 md:grid-cols-3 gap-6">
     <div class="bg-gray-900 p-4 rounded-xl">
       <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/5/k/y/-original-imagqg6yq8v2f7g.jpeg" class="rounded">
       <h2 class="mt-2">Trendy Sneakers</h2>
       <button class="bg-red-500 px-3 py-1 mt-2 rounded">Buy Now</button>
     </div>
 
+  <!-- Product 1 -->
+  <div class="bg-gray-900 p-5 rounded-2xl shadow-lg">
+    <img src="https://rukminim2.flixcart.com/image/1360/1360/xif0q/watch-strap/g/l/m/22-22mm-magnetic-watch-band-with-folding-buckle-and-quick-original-imahhavzhetxqxz8.jpeg?q=90" class="rounded-xl mb-4 w-full h-32 object-contain bg-white">
+    <h3 class="text-xl font-semibold">Watch Belt</h3>
+    <p class="text-gray-400">₹149</p>
+    <a href="https://fktr.in/nsFMuTh" target="_blank"
+   class="block mt-3 bg-red-500 text-center py-2 rounded-xl w-full hover:bg-red-600">
+   Buy Now
+    </a>
+     </button>
+  </div>
     <div class="bg-gray-900 p-4 rounded-xl">
       <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/t-shirt/a/d/j/m-tshirt-01-original-imagq8f7z9g.jpeg" class="rounded">
       <h2 class="mt-2">GenZ T-Shirt</h2>
       <button class="bg-red-500 px-3 py-1 mt-2 rounded">Buy Now</button>
     </div>
 
+  <!-- Product 2 -->
+  <div class="bg-gray-900 p-5 rounded-2xl shadow-lg">
+    <img src="https://rukminim1.flixcart.com/image/1360/1360/xif0q/sunglass/v/j/a/medium-spyn-4flaunt-original-imahgfskhmy8gddz.jpeg?q=90" class="rounded-xl mb-4 w-full h-32 object-contain bg-white">
+    <h3 class="text-xl font-semibold">Sun Glasses</h3>
+    <p class="text-gray-400">₹866</p>
+     <a href="https://fktr.in/5iaLrDt" target="_blank"
+   class="block mt-3 bg-red-500 text-center py-2 rounded-xl w-full hover:bg-red-600">
+   Buy Now
+    </a>
     <div class="bg-gray-900 p-4 rounded-xl">
       <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/watch/a/q/y/-original-imagqg6ywatch.jpeg" class="rounded">
       <h2 class="mt-2">Stylish Watch</h2>
       <button class="bg-red-500 px-3 py-1 mt-2 rounded">Buy Now</button>
     </div>
 
-  </div>
+        </button>
+</div>
+
+   
+</section>
+
+<!-- About -->
+<section id="about" class="p-10 text-center">
+  <h2 class="text-3xl font-bold mb-4">About Us</h2>
+  <p class="text-gray-400">
+    We find the best budget fashion products for GenZ. Trending styles, affordable prices.
+  </p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="p-10 text-center">
+  <h2 class="text-3xl font-bold mb-4">Contact</h2>
+  <p class="text-gray-400">DM us on Instagram: @genzfindshub</p>
+</section>
+
+<!-- Footer -->
+<footer class="text-center p-5 border-t border-red-600 text-gray-500">
+  © 2026 GenZ Finds Hub
+</footer>
+
+<!-- Simple working JS -->
+<script>
+  function buyProduct(name) {
+    alert("You clicked Buy Now for: " + name + "\n\n(Replace this with your affiliate link later)");
+  }
+</script>
 
 </body>
 </html>
