@@ -1,157 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>GenZ Finds Hub</title>
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: black;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .glass {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .product-card {
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+    }
+  </style>
 </head>
 
-<body class="bg-black text-white font-sans">
+<body class="text-white">
 
-<!-- Navbar -->
-<nav class="flex justify-between items-center p-5 bg-black border-b border-red-600">
-  <h1 class="text-2xl font-bold text-red-500">GenZ Finds Hub</h1>
-  <div class="space-x-4">
-    <a href="#products" class="hover:text-red-500">Products</a>
-    <a href="#about" class="hover:text-red-500">About</a>
-    <a href="#contact" class="hover:text-red-500">Contact</a>
-  </div>
-</nav>
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 glass border-b border-red-600">
 
-<!-- Hero -->
-<section class="text-center py-20">
-  <h2 class="text-4xl font-bold mb-4">Find Your Style 🔥</h2>
-  <p class="text-gray-400 mb-6">Best Budget Fashion for GenZ</p>
-  <a href="#products" class="bg-red-500 px-6 py-3 rounded-2xl hover:bg-red-600">
-    Shop Now
-  </a>
-</section>
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-<!-- Products -->
-<section id="products" class="p-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <h1 class="text-2xl md:text-3xl font-bold text-red-500">
+        GenZ Finds Hub
+      </h1>
 
-  <!-- Product 1 -->
-  <div class="bg-gray-900 p-5 rounded-2xl shadow-lg">
-    <img src="https://rukminim2.flixcart.com/image/1360/1360/xif0q/watch-strap/g/l/m/22-22mm-magnetic-watch-band-with-folding-buckle-and-quick-original-imahhavzhetxqxz8.jpeg?q=90" class="rounded-xl mb-4 w-full h-32 object-contain bg-white">
-    <h3 class="text-xl font-semibold">Watch Belt</h3>
-    <p class="text-gray-400">₹149</p>
-    <a href="https://fktr.in/nsFMuTh" target="_blank"
-   class="block mt-3 bg-red-500 text-center py-2 rounded-xl w-full hover:bg-red-600">
-   Buy Now
-    </a>
-     </button>
-  </div>
+      <div class="hidden md:flex gap-8 font-medium">
 
-  <!-- Product 2 -->
-  <div class="bg-gray-900 p-5 rounded-2xl shadow-lg">
-    <img src="https://rukminim1.flixcart.com/image/1360/1360/xif0q/sunglass/v/j/a/medium-spyn-4flaunt-original-imahgfskhmy8gddz.jpeg?q=90" class="rounded-xl mb-4 w-full h-32 object-contain bg-white">
-    <h3 class="text-xl font-semibold">Sun Glasses</h3>
-    <p class="text-gray-400">₹999</p>
-     <a href="https://fktr.in/5iaLrDt" target="_blank"
-   class="block mt-3 bg-red-500 text-center py-2 rounded-xl w-full hover:bg-red-600">
-   Buy Now
-    </a>
+        <a href="#products" class="hover:text-red-500 transition">
+          Products
+        </a>
 
-        </button>
-  </div>
+        <a href="#about" class="hover:text-red-500 transition">
+          About
+        </a>
 
-    <!-- Product 3 -->
-  <div class="bg-gray-900 p-5 rounded-2xl shadow-lg">
-    <img src="https://rukminim2.flixcart.com/image/1360/1360/xif0q/slipper-flip-flop/a/y/8/10-hg-ge-1029-rust-grey-hygear-rust-grey-original-imah6qvfhsppq5qr.jpeg?q=90" class="rounded-xl mb-4 w-full h-32 object-contain bg-white">
-    <h3 class="text-xl font-semibold">Slides</h3>
-    <p class="text-gray-400">₹373</p>
-     <a href="https://fktr.in/jn8sv6x" target="_blank"
-   class="block mt-3 bg-red-500 text-center py-2 rounded-xl w-full hover:bg-red-600">
-   Buy Now
-    </a>
+        <a href="#contact" class="hover:text-red-500 transition">
+          Contact
+        </a>
 
-        </button>
-  </div>
+      </div>
 
-   <!-- Product 4 -->
-  <div class="bg-gray-900 p-5 rounded-2xl shadow-lg">
-    <img src="https://assets.myntassets.com/h_1440,q_75,w_1080/v1/assets/images/25065758/2023/9/21/799a2bd3-f5ff-46f9-9442-dcb5755001431695272354921HERENOWMenFormalLoafers1.jpg" class="rounded-xl mb-4 w-full h-32 object-contain bg-white">
-    <h3 class="text-xl font-semibold">Black loafers (HERE & NOW)</h3>
-    <p class="text-gray-400">₹608</p>
-     <a href="https://myntr.it/Ai4P08H" target="_blank"
-   class="block mt-3 bg-red-500 text-center py-2 rounded-xl w-full hover:bg-red-600">
-   Buy Now
-    </a>
+    </div>
 
-        </button>
-  </div> 
+  </nav>
 
-  <!-- Product 5 -->
-  <div class="bg-gray-900 p-5 rounded-2xl shadow-lg">
-    <img src="https://rukminim3.flixcart.com/image/640/561/xif0q/shirt/h/c/k/m-dark-lightblue-rodeiz-original-imahjyqpbg3dpuu8.jpeg?q=60&crop=false" class="rounded-xl mb-4 w-full h-32 object-contain bg-white">
-    <h3 class="text-xl font-semibold">Striped Casual Blue Shirt</h3>
-    <p class="text-gray-400">₹292</p>
-     <a href="https://bitli.in/Go581mr" target="_blank"
-   class="block mt-3 bg-red-500 text-center py-2 rounded-xl w-full hover:bg-red-600">
-   Buy Now
-    </a>
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
 
-        </button>
-  </div>
+    <div class="absolute inset-0 bg-gradient-to-b from-red-900/20 to-black"></div>
 
-   
-  <!-- Product 6 -->
-  <div class="bg-gray-900 p-5 rounded-2xl shadow-lg">
-    <img src="https://rukminim3.flixcart.com/image/1400/554/xif0q/trouser/h/b/u/32-line-trouser-lyphy-original-imahkvk85kmbtggy.jpeg?q=60&crop=false" class="rounded-xl mb-4 w-full h-32 object-contain bg-white">
-    <h3 class="text-xl font-semibold">Men White Trousers</h3>
-    <p class="text-gray-400">₹403</p>
-     <a href="https://bitli.in/UXSy0n4" target="_blank"
-   class="block mt-3 bg-red-500 text-center py-2 rounded-xl w-full hover:bg-red-600">
-   Buy Now
-    </a>
+    <div class="max-w-7xl mx-auto px-6 py-24 md:py-32 relative z-10">
 
-        </button>
-  </div>
+      <div class="text-center">
 
+        <p class="text-red-500 font-semibold uppercase tracking-widest mb-4">
+          Trending Fashion Store
+        </p>
 
-   <!-- Product 7 -->
-  <div class="bg-gray-900 p-5 rounded-2xl shadow-lg">
-    <img src="https://rukminim2.flixcart.com/image/1352/1352/xif0q/short/8/k/m/s-tbg-blshort-plains46-tripr-original-imahhnz3syjwsgxd.jpeg?q=90" class="rounded-xl mb-4 w-full h-32 object-contain bg-white">
-    <h3 class="text-xl font-semibold">Men shorts </h3>
-    <p class="text-gray-400">₹383</p>
-     <a href="https://fktr.in/7icUV2S" target="_blank"
-   class="block mt-3 bg-red-500 text-center py-2 rounded-xl w-full hover:bg-red-600">
-   Buy Now
-    </a>
+        <h2 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+          Upgrade Your <span class="text-red-500">Style</span> 🔥
+        </h2>
 
-        </button>
-  </div>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
+          Discover viral fashion products for GenZ at affordable prices.
+        </p>
 
+        <a href="#products"
+          class="bg-red-500 hover:bg-red-600 transition px-8 py-4 rounded-2xl font-semibold inline-block">
+          Shop Now
+        </a>
 
-  
-</section>
+      </div>
 
-<!-- About -->
-<section id="about" class="p-10 text-center">
-  <h2 class="text-3xl font-bold mb-4">About Us</h2>
-  <p class="text-gray-400">
-    We find the best budget fashion products for GenZ. Trending styles, affordable prices.
-  </p>
-</section>
+    </div>
 
-<!-- Contact -->
-<section id="contact" class="p-10 text-center">
-  <h2 class="text-3xl font-bold mb-4">Contact</h2>
-  <p class="text-gray-400">DM us on Instagram: @genzfindshub</p>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="text-center p-5 border-t border-red-600 text-gray-500">
-  © 2026 GenZ Finds Hub
-</footer>
+  <!-- SEARCH -->
+  <section class="max-w-7xl mx-auto px-6 mt-6">
 
-<!-- Simple working JS -->
-<script>
-  function buyProduct(name) {
-    alert("You clicked Buy Now for: " + name + "\n\n(Replace this with your affiliate link later)");
-  }
-</script>
+    <div class="bg-gray-900 border border-gray-800 rounded-2xl p-4">
+
+      <input type="text" id="searchInput" placeholder="Search products..."
+        class="w-full bg-transparent outline-none text-white placeholder-gray-500"
+        onkeyup="searchProducts()" />
+
+    </div>
+
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="max-w-7xl mx-auto px-6 py-16">
+
+    <div class="flex items-center justify-between mb-10">
+
+      <h2 class="text-3xl md:text-4xl font-bold">
+        Trending Products
+      </h2>
+
+      <span class="text-red-500 font-semibold">
+        GenZ Collection
+      </span>
+
+    </div>
+
+    <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- PRODUCT 1 -->
+      <div
+        class="product-item product-card bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-xl">
+
+        <div class="bg-white p-4">
+
+          <img
+            src="https://rukminim2.flixcart.com/image/1360/1360/xif0q/watch-strap/g/l/m/22-22mm-magnetic-watch-band-with-folding-buckle-and-quick-original-imahhavzhetxqxz8.jpeg?q=90"
+            alt="Watch Belt"
+            class="w-full h-64 object-contain">
+
+        </div>
+
+        <div class="p-6">
+
+          <span class="bg-red-500 text-xs px-3 py-1 rounded-full font-semibold">
+            TRENDING
+          </span>
+
+          <h3 class="text-2xl font-semibold mt-4">
+            Magnetic Watch Belt
+          </h3>
+
+          <p class="text-gray-400 mt-2">
+            Stylish premium magnetic watch strap.
+          </p>
+
+          <div class="flex items-center justify-between mt-6">
+
+            <p class="text-2xl font-bold text-red-500">
+              ₹149
+            </p>
+
+            <a href="https://fktr.in/nsFMuTh" target="_blank"
+              class="bg-red-500 hover:bg-red-600 transition px-5 py-2 rounded-xl font-medium">
+              Buy Now
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 2 -->
+      <div
+        class="product-item product-card bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-xl">
+
+        <div class="bg-white p-4">
+
+          <img
+            src="https://rukminim1.flixcart.com/image/1360/1360/xif0q/sunglass/v/j/a/medium-spyn-4flaunt-original-imahgfskhmy8gddz.jpeg?q=90"
+            alt="Sunglasses"
+            class="w-full h-64 object-contain">
+
+        </div>
+
+        <div class="p-6">
+
+          <span class="bg-red-500 text-xs px-3 py-1 rounded-full font-semibold">
+            HOT
+          </span>
+
+          <h3 class="text-2xl font-semibold mt-4">
+            Stylish Sunglasses
+          </h3>
+
+          <p class="text-gray-400 mt-2">
+            Viral GenZ fashion sunglasses.
+          </p>
+
+          <div class="flex items-center justify-between mt-6">
+
+            <p class="text-2xl font-bold text-red-500">
+              ₹999
+            </p>
+
+            <a href="https://fktr.in/5iaLrDt" target="_blank"
+              class="bg-red-500 hover:bg-red-600 transition px-5 py-2 rounded-xl font-medium">
+              Buy Now
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 3 -->
+      <div
+        class="product-item product-card bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-xl">
+
+        <div class="bg-white p-4">
+
+          <img
+            src="https://rukminim2.flixcart.com/image/1360/1360/xif0q/slipper-flip-flop/a/y/8/10-hg-ge-1029-rust-grey-hygear-rust-grey-original-imah6qvfhsppq5qr.jpeg?q=90"
+            alt="Slides"
+            class="w-full h-64 object-contain">
+
+        </div>
+
+        <div class="p-6">
+
+          <span class="bg-red-500 text-xs px-3 py-1 rounded-full font-semibold">
+            BESTSELLER
+          </span>
+
+          <h3 class="text-2xl font-semibold mt-4">
+            Casual Slides
+          </h3>
+
+          <p class="text-gray-400 mt-2">
+            Comfortable trendy slides for daily wear.
+          </p>
+
+          <div class="flex items-center justify-between mt-6">
+
+            <p class="text-2xl font-bold text-red-500">
+              ₹373
+            </p>
+
+            <a href="https://fktr.in/jn8sv6x" target="_blank"
+              class="bg-red-500 hover:bg-red-600 transition px-5 py-2 rounded-xl font-medium">
+              Buy Now
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 4 -->
+      <div
+        class="product-item product-card bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-xl">
+
+        <div class="bg-white p-4">
+
+          <img
+            src="https://assets.myntassets.com/h_1440,q_75,w_1080/v1/assets/images/25065758/2023/9/21/799a2bd3-f5ff-46f9-9442-dcb5755001431695272354921HERENOWMenFormalLoafers1.jpg"
+            alt="Loafers"
+            class="w-full h-64 object-contain">
+
+        </div>
+
+        <div class="p-6">
+
+          <span class="bg-red-500 text-xs px-3 py-1 rounded-full font-semibold">
+            PREMIUM
+          </span>
+
+          <h3 class="text-2xl font-semibold mt-4">
+            Black Loafers
+          </h3>
+
+          <p class="text-gray-400 mt-2">
+            Stylish loafers for classy outfits.
+          </p>
+
+          <div class="flex items-center justify-between mt-6">
+
+            <p class="text-2xl font-bold text-red-500">
+              ₹608
+            </p>
+
+            <a href="https://myntr.it/Ai4P08H" target="_blank"
+              class="bg-red-500 hover:bg-red-600 transition px-5 py-2 rounded-xl font-medium">
+              Buy Now
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 5 -->
+      <div
+        class="product-item product-card bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-xl">
+
+        <div class="bg-white p-4">
+
+          <img
+            src="https://rukminim3.flixcart.com/image/640/561/xif0q/shirt/h/c/k/m-dark-lightblue-rodeiz-original-imahjyqpbg3dpuu8.jpeg?q=60&crop=false"
+            alt="Blue Shirt"
+            class="w-full h-64 object-contain">
+
+        </div>
+
+        <div class="p-6">
+
+          <span class="bg-red-500 text-xs px-3 py-1 rounded-full font-semibold">
+            TRENDING
+          </span>
+
+          <h3 class="text-2xl font-semibold mt-4">
+            Casual Blue Shirt
+          </h3>
+
+          <p class="text-gray-400 mt-2">
+            Aesthetic striped casual shirt.
+          </p>
+
+          <div class="flex items-center justify-between mt-6">
+
+            <p class="text-2xl font-bold text-red-500">
+              ₹292
+            </p>
+
+            <a href="https://bitli.in/Go581mr" target="_blank"
+              class="bg-red-500 hover:bg-red-600 transition px-5 py-2 rounded-xl font-medium">
+              Buy Now
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 6 -->
+      <div
+        class="product-item product-card bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-xl">
+
+        <div class="bg-white p-4">
+
+          <img
+            src="https://rukminim3.flixcart.com/image/1400/554/xif0q/trouser/h/b/u/32-line-trouser-lyphy-original-imahkvk85kmbtggy.jpeg?q=60&crop=false"
+            alt="White Trouser"
+            class="w-full h-64 object-contain">
+
+        </div>
+
+        <div class="p-6">
+
+          <span class="bg-red-500 text-xs px-3 py-1 rounded-full font-semibold">
+            HOT
+          </span>
+
+          <h3 class="text-2xl font-semibold mt-4">
+            White Trousers
+          </h3>
+
+          <p class="text-gray-400 mt-2">
+            Clean classy trousers for outfits.
+          </p>
+
+          <div class="flex items-center justify-between mt-6">
+
+            <p class="text-2xl font-bold text-red-500">
+              ₹403
+            </p>
+
+            <a href="https://bitli.in/UXSy0n4" target="_blank"
+              class="bg-red-500 hover:bg-red-600 transition px-5 py-2 rounded-xl font-medium">
+              Buy Now
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 7 -->
+      <div
+        class="product-item product-card bg-gray-900 border border-gray-800 rounded-3xl overflow-hidden shadow-xl">
+
+        <div class="bg-white p-4">
+
+          <img
+            src="https://rukminim2.flixcart.com/image/1352/1352/xif0q/short/8/k/m/s-tbg-blshort-plains46-tripr-original-imahhnz3syjwsgxd.jpeg?q=90"
+            alt="Shorts"
+            class="w-full h-64 object-contain">
+
+        </div>
+
+        <div class="p-6">
+
+          <span class="bg-red-500 text-xs px-3 py-1 rounded-full font-semibold">
+            SUMMER
+          </span>
+
+          <h3 class="text-2xl font-semibold mt-4">
+            Men Shorts
+          </h3>
+
+          <p class="text-gray-400 mt-2">
+            Comfortable shorts for summer wear.
+          </p>
+
+          <div class="flex items-center justify-between mt-6">
+
+            <p class="text-2xl font-bold text-red-500">
+              ₹383
+            </p>
+
+            <a href="https://fktr.in/7icUV2S" target="_blank"
+              class="bg-red-500 hover:bg-red-600 transition px-5 py-2 rounded-xl font-medium">
+              Buy Now
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-20">
+
+    <div class="bg-gray-900 border border-gray-800 rounded-3xl p-10 text-center">
+
+      <h2 class="text-4xl font-bold mb-6">
+        About Us
+      </h2>
+
+      <p class="text-gray-400 leading-8 max-w-3xl mx-auto">
+        We find the best trending fashion products for GenZ.
+        Stylish, affordable, aesthetic and viral products in one place.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 pb-20">
+
+    <div class="bg-gradient-to-r from-red-600 to-red-500 rounded-3xl p-10 text-center">
+
+      <h2 class="text-4xl font-bold mb-4">
+        Follow Our Instagram
+      </h2>
+
+      <p class="text-white/80 mb-8">
+        Daily fashion finds, outfit inspiration & viral reels.
+      </p>
+
+      <a href="https://instagram.com/genz_finds_hub" target="_blank"
+        class="inline-block bg-black hover:bg-gray-900 transition px-8 py-4 rounded-2xl font-semibold">
+        Follow on Instagram
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-800">
+
+    <div class="max-w-7xl mx-auto px-6 py-8 text-center">
+
+      <p class="text-gray-500 text-sm">
+        © 2026 GenZ Finds Hub. All Rights Reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- SEARCH FUNCTION -->
+  <script>
+
+    function searchProducts() {
+
+      let input = document.getElementById("searchInput").value.toLowerCase();
+
+      let products = document.querySelectorAll(".product-item");
+
+      products.forEach(product => {
+
+        let text = product.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+          product.style.display = "block";
+        }
+
+        else {
+          product.style.display = "none";
+        }
+
+      });
+
+    }
+
+  </script>
 
 </body>
+
 </html>
